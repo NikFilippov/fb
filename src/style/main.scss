@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* normalize */
+@import "../../node_modules/normalize.css/normalize.css";
+
+/* grid */
+@import "partials/flexboxgrid2";
+
+@import "variables";
+@import "partials/fonts";
+@import "partials/todo.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}

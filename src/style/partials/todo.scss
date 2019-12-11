@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+}
+
+.todos {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 32px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__list {
+    width: 100%;
+
+    .todo {
+      &__item {
+        display: flex;
+        flex-flow: row nowrap;
+        text-align: left;
+        width: 100%;
+        justify-content: space-between;
+        padding: 32px 0;
+        border-top: 1px solid #333;
+
+        span {
+          padding-left: 32px;
+        }
+
+        &.green {
+          background-color: darkgreen;
+        }
+
+        &:last-child {
+          border-bottom: 1px solid #333;
+        }
+
+        &:hover {
+          border-left: 2px solid #0a0a0a;
+          border-right: 2px solid #0a0a0a;
+        }
+
+        .input-center {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
